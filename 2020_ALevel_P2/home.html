@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>HomePage</title></head>
+<body>
+	<table>
+		<th>Full Name</th><th>Screen Name</th><th>Person Type</th>
+		
+		{% for result in display%}
+			<tr>
+				<td>{{result[0]}}</td><td>{{result[1]}}</td><td>{{result[2]}}</td>
+			</tr>
+			
+		{% endfor %}
+	</table>
+</body>
+</html>
