@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Qualification</title></head>
+<body>
+	<table>
+		<tr><th>Competitor Name</th><th>Total Score</th><th>Qualiifcation</th></tr>
+		{% for line in results %}
+			<tr>
+				<td>{{line[0]}}</td><td>{{line[1]}}</td><td>{{line[2]}}</td>
+			</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>

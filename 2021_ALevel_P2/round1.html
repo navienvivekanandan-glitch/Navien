@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Round 1 Scores</title></head>
+<body>
+	<table>
+		<tr><th>Competitor Name</th><th>Score</th></tr>
+		{% for line in results %}
+			<tr>
+				<td>{{line[0]}}</td><td>{{line[1]}}</td>
+			</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>
