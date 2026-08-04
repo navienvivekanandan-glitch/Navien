@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Decompressed Image</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<h1>Image</h1>
+
+<table>
+
+{% for row in image %}
+    <tr>
+
+    {% for colour in row %}
+        <td style="background-color: {{colour}}">
+            {{colour}}
+        </td>
+    {% endfor %}
+
+    </tr>
+{% endfor %}
+
+</table>
+
+</body>
+
+</html>
