@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HomePage</title>
+	<style>
+        table {
+            border: black;
+        }
+        th, td {
+            text-align: left;
+            border: 1px solid black;
+        }
+ 
+    </style>
+</head>
+<body>
+	<table>
+		<tr><th>Member's Family Name</th><th>Member's Given Name</th><th>Book Title</th></tr>
+		
+		{% for line in results %}
+			<tr>
+				<td>{{ line[0] }}</td><td>{{ line[1] }}</td><td>{{ line[2] }}</td>
+			</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>
